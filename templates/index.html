@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PetBuddy AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <h2>🐾 PetBuddy AI</h2>
+
+        <div class="pet" onclick="selectPet('Dog', this)">🐶 Dog</div>
+
+        <div class="pet" onclick="selectPet('Cat', this)">🐱 Cat</div>
+
+        <div class="pet" onclick="selectPet('Rabbit', this)">🐰 Rabbit</div>
+
+        <div class="pet" onclick="selectPet('Hamster', this)">🐹 Hamster</div>
+
+        <div class="pet" onclick="selectPet('Parrot', this)">🦜 Parrot</div>
+
+        <div class="pet" onclick="selectPet('Turtle', this)">🐢 Turtle</div>
+
+        <div class="pet" onclick="selectPet('Fish', this)">🐠 Fish</div>
+
+        <div class="pet" onclick="selectPet('Capybara', this)">🦫 Capybara</div>
+
+        <div class="pet" onclick="selectPet('Sugar Glider', this)">🐿️ Sugar Glider</div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="header">
+            💜 PetBuddy AI Assistant
+        </div>
+
+        <div class="selected-pet">
+            Caring For:
+            <span id="pet-name">Dog</span>
+        </div>
+
+        <div id="chat-box"></div>
+
+        <div class="input-section">
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Ask about your pet..."
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
